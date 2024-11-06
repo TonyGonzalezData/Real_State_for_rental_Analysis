@@ -61,5 +61,12 @@ The final report with conclusions on the real estate market situation for invest
 
 As for the dashboard, you can access it at this public Tableau link: [Investment in Housing for Long-Term Rental in the Real State Market of La Coruña](https://public.tableau.com/app/profile/antonio.gonz.lez.pazos/viz/DashboardInvestmentinHousingforLong-TermRentalintheRealStateMarketofLaCorua/Dashboard)
 
+> [!NOTE]  
+> The project was developed using data dated October 29, 2024.
+> 
+> Therefore, some of the insights and conclusions are only relevant within this time frame.
+> 
+> The same applies to the Tableau Dashboard, which reflects the information from that date.
+
 
 
