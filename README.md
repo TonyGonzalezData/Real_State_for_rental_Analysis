@@ -44,6 +44,15 @@ As for the Reporting project, it consists of the following phases:
 - **Project design**: We define the KPIs and charts that will be relevant. We specify the field type, formula, data source, type of visualization, granularity, and filters for each of the different objects.
 - **Objects design**: We build each object separately and the final dashboard that brings them all together.
 
+## To keep in mind
+
+The rental price calculation was done by multiplying the average price per m² of the respective district by the m² of the specific property. However, this method results in rental values that are unrepresentative for properties with areas far from the average, as the relationship between rental price and m² is not linear.
+
+Therefore, in the 04_Data_Preparation notebook, we excluded properties with areas over 150 m² (the median value) to avoid distorting the analysis.
+
+Additionally, we removed entries for properties such as "House," "Townhouse," and similar types, applying the same m² criteria mentioned above.
+
+
 ## Highlights
 
 I found a problem while building the dashboard as I needed. My idea was to place two objects that geolocated the apartments, either grouped by postal code or individually. The issue was that in the original files, I only had the address. The solution came with the Google Maps Platform API, specifically with its [Geocoding service](https://github.com/googlemaps/google-maps-services-python).
